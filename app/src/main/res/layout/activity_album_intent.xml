@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.musicalstructureapp.AlbumIntent">
+
+    <ImageView
+        android:id="@+id/albumThumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_290"
+        android:scaleType="centerCrop"
+        tools:background="#2d2d" />
+
+    <Button
+        android:id="@+id/album_play_button"
+        android:layout_width="@dimen/dimen_70"
+        android:layout_height="@dimen/dimen_70"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dimen_46"
+        android:layout_marginEnd="@dimen/dimen_23"
+        android:layout_marginRight="@dimen/dimen_23"
+        android:background="@drawable/ic_play_circle_filled_black_24dp"
+        android:backgroundTint="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/album_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/albumThumbnail"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginStart="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_52"
+        android:textSize="@dimen/textSize_30"
+        tools:text="Album Name" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/album_title"
+        android:layout_alignStart="@+id/album_title"
+        android:layout_below="@+id/album_title"
+        android:layout_marginTop="@dimen/dimen_15"
+        android:text="@string/random_text" />
+</RelativeLayout>
